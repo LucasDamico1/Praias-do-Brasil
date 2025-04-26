@@ -1,0 +1,143 @@
+/*A estrutura do css, que é composta pela identificação do elemento, seguido de chaves e, por fim, dentro das chaves, você escolherá o atributo que deseja modificar, seguido do parâmetro. Ex.: 
+p{front-size: 16px;
+    color: green;} 
+(sempre deve haver ponto e virgula no final dos comandos)*/
+/*Medidas absolutas - ou seja, fixas: 
+    px - Pixels;
+    Cm - Centímetros;
+    Mm - Polegadas;
+Medidas Relativas - ou seja, ajustáveis:
+    Rem - Se ajusta de acordo com o tamanho da fonte HTML;
+    % - Relativo ao tamanho do elemento pai/tela
+Linhas:
+    line-height - Define o epaçamento entre as linhas;
+    Padding - Espaçamento interno nas bordas;
+*/
+
+.ferias{
+    /*Alterando a largura da imagem*/
+    width: 50% ;
+    /*Alterando a altura da imagem*/
+    height: 50%;
+}
+tr,td{
+    /*Definindo tipo e espessura da borda*/
+    border: 1px solid; /*solid, dashed, dotted, double*/
+    /*definindo a cor da borda das linhas e colunas da tabela*/
+    border-color: black solid;
+    /*Ajustando largura*/
+    width: 40%;
+}
+td{
+    /*Ajustando largura*/
+    width: 250px;
+    text-align: center;
+}
+.Linha1{
+    background-color: #F04400;
+    text-align: center;/*Alinha no centro*/
+    color: black; /*Troca a cor da linha*/
+}
+body{
+    background-image: linear-gradient(to bottom, #8794b7, #9f7090, #c888a2, #ff977a, #fbbdb2); /*Criamos um gradiente para a página web. 
+    Formas de aplicação right, left, top*/
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center; /*Centraliza o texto*/
+    color: #ff6f61; /*Aplica a cor laranja*/
+    font-size: 3rem; /*Altera o Tamanho*/
+    margin-bottom: 30px; /*Espaço abaixo do título*/
+}
+h3,h4{
+    color: lawngreen;/*Cor da letra/fonte*/
+    margin-top: 20px;/*Espaço superior entre as seções*/
+}
+/*Estilo para todas as imagens*/
+img{
+    width: 100%;/*Ocupa 100% da largura do elemento em que ela está*/
+    max-width: 600px;/*Limite de largura*/
+    height: auto;/*Manter a proporção*/
+    border-radius: 12px;/*Bordas arredondadas*/
+    margin: 10px 0px;/*Espaçamento acima e abaixo entre a img e o conteúdo*/
+}
+/*Estilizando os links*/
+a{
+    color: #ff5722;/*cor da letra/fonte*/
+    text-decoration: none;/*Remove o traço do link*/
+}
+/*Evento hover em links*/
+a:hover{
+    text-decoration: underline; /*Adicionar um traço logo abaixo do link quando o mouse etiver sobre ele*/
+}
+ol,li{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}   
+/*Etilo de Tabela*/
+table{
+    width: 100%;/*Ocupa 100% da largura do elemento ao qual ela está inserida*/
+    border-collapse: collapse;/*Uni as linhas da tabela, como uma tabela do Excel*/
+    margin-top: 20px;/*Espaço acima da tabela*/
+    border-radius: 15px;
+}
+table td{
+    border: 1px solid #ddd;/*Borda de 1 Pixel de largrura, linha contínua e cor*/
+    /*Precisamos atribuir espaçamento interno, alinhar o texto ao centro e definir cor de fundo*/
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+/*Estilizar os Cards*/
+.card{
+    background-color: white;/*Cor de fundo*/
+    border-radius: 15px;/*Arredondar as Bordas*/
+    margin: 20px auto;/*Espaçamento*/
+    overflow: hidden;/*Ocultar o que passar dos limites do card*/
+    display: inline-block;/*Coloca os cards lado à lado*/
+    vertical-align: top;/*Alinha os cards pelo topo*/
+    height: 700px;/*Define a altura dos cards*/
+    transition: transform 0.3s ease-in-out;/*Animação na interação com os cards*/
+}
+.card:hover{
+    transform: scale(1.03);/*Aumento em 3% o tamanho do card*/    
+}
+/*Estilização dos títulos do card*/
+.card-body{
+    font-size: 0.90rem;/*Modifica tamanho*/
+    color: #00695c;/*Atribuíndo nova cor*/
+    margin-bottom: 10px;/*Espaço abaixo do título*/
+    margin-left: 10px;/*Espaço à esquerda do título*/
+}
+/*Estilizar o Parágrafo*/
+.card-text{
+    margin-left: 10px;
+    color: #444;
+}
+/*Ajustando a imagem*/
+.card-img-top{
+    width: 50%;
+    height: 40%;
+}
+.btn-primary{
+    background-color: #009688;/*Cor de fundo*/
+    color: white;/*Cor da Letra*/
+    padding: 10px 16px;/*Espaço interno na horizontal e vertical*/
+    border-radius: 8px;/*Arredondar as bordas*/
+    text-align: center;/*Centralizar o texto*/
+    margin-left: 10px;/*Espaço externo entre as bordas do botão e o limite do card*/
+}
+.btn-primary:hover{
+    transform-style: rgb(0, 128, 122);
+    background-color: #1b0096;
+    text-decoration: none;
+}
+/*Responsividade*/
+/*Telas pequenas*/
+@media (max-width:768px){
+    .card{
+        width: 90%;
+        margin: 20px auto;
+    }
+}
