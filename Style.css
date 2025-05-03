@@ -141,3 +141,34 @@ table td{
         margin: 20px auto;
     }
 }
+/*Escondendo o Checkbox da Tela*/
+#menu{
+    display: none;/*O Checkbox não irá mais aparecer, mas ainda estará lá*/
+}
+/*Estalizar o botão Label*/
+.menuicone{
+    display: block;/*Exibe Como um Bloco em uma linha*/
+    background-color: rgba(95, 187, 118, 0.144);
+    color: black;
+    padding: 10px;
+    cursor: pointer;/*Cursor vira uma "mãozinha" ao passar o mouse sobre a opção*/
+    width: fit-content;/*Ajusta a largura ao tamanho do conteúdo*/
+}
+/*Ocultando os itens do menu*/
+.mobile-menu{
+    display: none;/*Oculta Itens*/
+    flex-direction: column;/*Os itens vão ser mostrados (quando visíveis) de forma vertical*/
+    background-color: rgb(167, 233, 230);
+}
+/*Estilizando os links individuais*/
+.mobile-menu a{
+    color: rgb(7, 7, 7);
+    padding: 10px;
+    text-decoration: none;
+    border-top: 1px solid rgb(50, 46, 46);/*Linha separadora entre os itens - aplica borda superior aos elementos*/
+    font-style: italic;
+}
+/*Regra que exibe o menu quando o checkbox é marcado*/
+#menu:checked + .menuicone + .mobile-menu{
+    display: flex;
+}
