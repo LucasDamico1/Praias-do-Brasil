@@ -11,17 +11,20 @@
         <body>
             <!--Criando um Menu Interativo-->
             <nav><!--Organiza todos os elementos do menu, centralizando-os em um só lugar-->
-                <ul>
-                    <li><a href="#Maresias">Maresias</a></li>
-                    <li><a href="#Baía_do_Sancho">Baía do Sancho</a></li>
-                    <li><a href="#Praia_dos_Carneiros">Praia dos Carneiros</a></li>
-                    <li><a href="#Praia_do_Rosa">Praia do Rosa</a></li>
-                    <li><a href="#Praia_de_Lopes_Mendes">Praia de Lopes Mendes</li>
-                    <li><a href="#Praia_do_Espelho">Praia do Espelho</a></li>
-                    <li><a href="#Cuidados_no_Verão">Cuidados no Verão</a></li>
-                    <li><a href="#Dicas_Praia">Dicas Para Praia</a></li>
-                    <li><a href="#Veja_Também">Veja Também</a></li>   
-                </ul>
+                <input type="checkbox" id="menu"><!--Cria uma caixa de seleção invisível, que será usada para mostrar/esconder nosso menu-->
+    <label for="menu" class="menuicone">&#9776 Menu</label><!--Associamos o input à label por meio do id do input (Menu), colocando-o como parâmetro no atributo "for" o comando label-->
+    <!--A label funcionará como um botão, quando clicarmos, nos mostrará os itens do menu, quando clicarmos novamente esconderá os itens como se ativasse e desativasse o Menu-->
+    <nav class="mobile-menu"> <!--Organizar os itens-->
+           <a href="#Maresias">Maresias;</a><!--Item 1º do Menu-->
+           <a href="#Baía_do_Sancho">Baía do Sancho;</a> <!--Item 2º do Menu-->
+           <a href="#Praia_dos_Carneiros">Praia dos Carneiros;</a> <!--Item 3º do Menu-->
+           <a href="#Praia_do_Rosa">Praia do Rosa;</a> <!--Item 4º do Menu-->
+           <a href="#Praia_de_Lopes_Mendes">Praia de Lopes Mendes;</a> <!--Item 5º do Menu-->
+           <a href="#Praia_do_Espelho">Praia do Espelho</a>
+            <a href="#Cuidados_no_Verão">Cuidados no Verão</a>
+            <a href="#Dicas_Praia">Dicas Para Praia</a>
+            <a href="#Veja_Também">Veja Também</a>
+    </nav>
             </nav>
             <h1>Praias do Brasil</h1>
             <section id="Maresias"><!--Organiza a pág. web em seção-->
