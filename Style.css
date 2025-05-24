@@ -71,9 +71,8 @@ a:hover{
     text-decoration: underline; /*Adicionar um traço logo abaixo do link quando o mouse etiver sobre ele*/
 }
 ol,li{
-    background-color: white;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 15px, 10px;
+    border-radius: 10px;
 }   
 /*Etilo de Tabela*/
 table{
@@ -171,4 +170,7 @@ table td{
 /*Regra que exibe o menu quando o checkbox é marcado*/
 #menu:checked + .menuicone + .mobile-menu{
     display: flex;
+}
+#carrosel4-Slides{
+    width: 80%;
 }
